@@ -68,11 +68,30 @@
     - Input: 이름, MBTI, 그룹 태그 지정
   - MBTI 정보 출력
     - 이름과 함께 MBTI 궁합도가 저장된 DB 정보를 가져와 나의 MBTI와 궁합이 잘맞는지를 색깔로 표현
-- ** 커뮤니티 페이지 **
+- ** 사용자 커뮤니티 페이지 **
   - CRUD 구현: 글 생성, 수정, 삭제, 이미지 업로드 가능
   - 글쓴이 프로필 출력: 글쓴이 프로필 이미지, 글 작성 시간, MBTI 정보 출력
   - 댓글, 대댓글 구현: 댓글을 글쓴이가 쓴다면 (글쓴이)로 표현
 - ** MBTI 정보 페이지 **
   - MBTI 성격 유형 별 정보 제공 페이지
   - 분류 버튼으로 카테고리 분류, 원하는 MBTI 유형별 게시글 필터
+
+
+<br>
+
+### 📁 주요 source 파일 트리구조
+
+```text
+1) Back-End
+┌─📁 backend (프로젝트 - setting 파일)
+├─📁 accounts (회원관리 App)
+├─📁 community (사용자 커뮤니티 App)
+├─📁 friends (주변인들의 MBTI 저장 App)
+├─📁 guestbook (방명록 App)
+├─📁 mbti (MBTI 정보 App)
+├─🗒️ .gitignore (env, 가상환경 파일 git ignore)
+└─🗒️ requirements.txt (pip 패키지 목록)
+```
+
+<br>
 

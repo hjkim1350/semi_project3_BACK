@@ -18,8 +18,9 @@
 <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </div>
 
-📌 **BackEnd**: DRF(Django REST Framework)를 통한 REST API 구현 및 프론트엔드 통신
-📌 **FrontEnd**: Vue.Cli를 활용한 전반적인 디자인 및 화면 설계/구현
+### 📌 **BackEnd**: DRF(Django REST Framework)를 통한 REST API 구현 및 프론트엔드 통신
+
+###📌 **FrontEnd**: Vue.Cli를 활용한 전반적인 디자인 및 화면 설계/구현
 
 ### 😎 프로젝트 인원 구성
 - 총 5명

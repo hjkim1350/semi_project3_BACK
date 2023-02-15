@@ -17,3 +17,12 @@
 <br>
 <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </div>
+
+📌 **BackEnd**: DRF(Django REST Framework)를 통한 REST API 구현 및 프론트엔드 통신
+📌 **FrontEnd**: Vue.Cli를 활용한 전반적인 디자인 및 화면 설계/구현
+
+### 😎 프로젝트 인원 구성
+- 총 5명
+- 담당 역할: 회원 custom DB 설계, 회원가입, 일반/카카오 로그인, 로그아웃 등 회원 관련 BackEnd 담당
+
+### 🕶️ 벤치마킹/레퍼런스 사이트

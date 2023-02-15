@@ -95,3 +95,21 @@
 
 <br>
 
+### ✅ 내가 담당한 기능
+
+> **💻 Role - Backend: 회원 custom DB 설계, 회원가입, 일반/카카오 로그인, 로그아웃 등 전반적인 회원 관련 담당**
+
+- ** CustomDB 설계 **
+  - settings.py에 인증 패키지인 djoser를 연결한 파라미터값에 커스텀한 model을 상속한 serializers를 연결해줌.
+  ```python
+  # 커스텀 유저모델
+    AUTH_USER_MODEL = "accounts.User"
+
+    DJOSER = {
+        "SERIALIZERS": {
+            "user_create": "accounts.serializers.UserSerializer",
+            "user": "accounts.serializers.UserSerializer",
+            "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ['https://kauth.kakao.com/oauth/token'],
+        }
+    }
+  ```

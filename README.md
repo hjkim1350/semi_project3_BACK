@@ -4,6 +4,7 @@
 > - 배포 주소: https://www.gaslimbting.xyz/
 
 ![image](https://user-images.githubusercontent.com/108647811/218984118-b14e2023-b638-40b6-bf58-b249a1ee6738.png)
+![image](https://user-images.githubusercontent.com/108647811/218986625-49d55192-1d2a-41f0-9e64-8ef05c7434cf.png)
 
 
 ### 🔨 프로젝트 기간

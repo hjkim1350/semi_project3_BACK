@@ -102,6 +102,7 @@
 - ** CustomDB 설계 **
   - settings.py에 인증 패키지인 djoser를 연결한 파라미터값에 커스텀한 model을 상속한 serializers를 연결해줌.
   ```python
+  # backend/settings.py
   # 커스텀 유저모델
     AUTH_USER_MODEL = "accounts.User"
 
@@ -115,6 +116,16 @@
   ```
   - 연결만 진행한 후 models에서 ID인 이메일 주소, PW는 제외하고 커스텀으로 들어갈 성별, MBTI, 나이, 프로필 사진을 설계하고 DB를 구동하였을 때 하기와 같이 PW가 plaintext로 저장되어 로그인이 되지 않는다는 결함이 생김.
   ![image](https://user-images.githubusercontent.com/108647811/218999997-50641881-eb42-4cb0-a36f-7dfc61fc3892.png)
-
-  - 
-  - 
+  - djoser의 PW는 SHA256으로 처리한다는 것을 확인, djoser에서 제공하는 set_password 활용하여 암호화
+  - 참고: https://github.com/sunscrapers/djoser/blob/master/poetry.lock
+  ```python
+  # accounts/serializers.py
+  def create(self,validated_data):
+    password = validated_data.pop('password', None)
+    instance = self.Meta.model(**validated_data)
+    if password is not None :
+        #provide django, password will be hashing!
+        instance.set_password(password)
+    instance.save()
+    return instance
+  ```

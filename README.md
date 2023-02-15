@@ -113,3 +113,8 @@
         }
     }
   ```
+  - 연결만 진행한 후 models에서 ID인 이메일 주소, PW는 제외하고 커스텀으로 들어갈 성별, MBTI, 나이, 프로필 사진을 설계하고 DB를 구동하였을 때 하기와 같이 PW가 plaintext로 저장되어 로그인이 되지 않는다는 결함이 생김.
+  ![image](https://user-images.githubusercontent.com/108647811/218999997-50641881-eb42-4cb0-a36f-7dfc61fc3892.png)
+
+  - 
+  - 

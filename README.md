@@ -23,7 +23,7 @@
 ### 📌 **BackEnd**
 - DRF(Django REST Framework)를 통한 REST API 구현 및 프론트엔드 통신
 
-###📌 **FrontEnd**
+### 📌 **FrontEnd**
 - Vue.Cli를 활용한 전반적인 디자인 및 화면 설계/구현
 
 <br>

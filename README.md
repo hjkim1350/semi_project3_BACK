@@ -116,7 +116,7 @@
   ```
   - 연결만 진행한 후 models에서 ID인 이메일 주소, PW는 제외하고 커스텀으로 들어갈 성별, MBTI, 나이, 프로필 사진을 설계하고 DB를 구동하였을 때 하기와 같이 PW가 plaintext로 저장되어 로그인이 되지 않는다는 결함이 생김.
   ![image](https://user-images.githubusercontent.com/108647811/218999997-50641881-eb42-4cb0-a36f-7dfc61fc3892.png)
-  - djoser의 PW는 SHA256으로 처리한다는 것을 확인, djoser에서 제공하는 set_password 활용하여 암호화
+  - 해결방법: djoser의 PW는 SHA256으로 처리한다는 것을 확인, djoser에서 제공하는 set_password 활용하여 암호화
   - 참고: https://github.com/sunscrapers/djoser/blob/master/poetry.lock
   ```python
   # accounts/serializers.py
@@ -129,3 +129,8 @@
     instance.save()
     return instance
   ```
+
+<br>
+
+- ** 로그인, 회원가입 **
+![image](https://user-images.githubusercontent.com/108647811/219248236-5b220223-235f-4930-b8a4-b4a47f464cf4.png)
